@@ -1,7 +1,26 @@
+# https://gist.github.com/neutraltone/99a60aa58111f3f086f20039e8401154
+# https://www.makeuseof.com/install-configure-mutt-with-gmail-on-linux/
+
+#set from=wx672ster@gmail.com
+#set realname="WANG Xiaolin"
+
+# IMAP settings
+#set imap_user="wx672ster@gmail.com"
+#set imap_pass="mypass"
+
+# SMTP settings
+#set smtp_url="smtps://wx672ster@smtp.gmail.com"
+#set smtp_pass="mypass"
+
+# Remote Gmail folders
+# set folder = "imaps://imap.gmail.com/"
+# set spoolfile = "+INBOX"
+# set postponed = "+[Gmail]/Drafts"
+# set record = "+[Gmail]/Sent Mail"
+# set trash = "+[Gmail]/Trash"
+
 set envelope_from=yes
-set sendmail="/usr/sbin/exim4"
-#set from=your@email.address
-set realname="WANG Xiaolin"
+#set sendmail="/usr/sbin/exim4"
 set use_from=yes
 set folder=~/Mail
 set alias_file=~/.mutt/alias
@@ -21,21 +40,11 @@ set resolve=yes
 set rfc2047_parameters=yes
 #set create_rfc2047_parameters=yes
 charset-hook !utf-8 gbk
-#my_hdr Reply-To: your@email.address
-#my_hdr From: Your Name <your@email.address>
 source ~/.mutt/alias
 source ~/.mutt/colors.angdraug
 #source = ~/Mail/.mutt.macros
 #source = ~/Mail/.gnupgp.mutt
 
-set pop_host="pop3.swfu.edu.cn"
-set pop_user="wx672ster@swfu.edu.cn"
-set pop_pass="wx672.Swfu"
-set pop_checkinterval=600
-set pop_reconnect=yes
-
 auto_view text/html application/msword
 
 macro index S "|/usr/bin/razor-report"
-
-#subscribe debian-chinese-gb@lists.debian.org debian-laptop@lists.debian.org debian-user@lists.debian.org debian-emacsen@lists.debian.org list-tetex@lists.debian.org
