@@ -83,7 +83,8 @@ c.aliases = {
     'gist':'open -t https://gist.github.com',
     'gmail':'open -t https://mail.google.com',
     'lecture':'open -t https://cs6.swfu.edu.cn/~wx672/lecture_notes',
-    'wechat':'open -t https://web.wechat.com/'
+    'wechat':'open -t https://web.wechat.com/',
+    'havoc':'https://havoc-os.com/download'
 }
 
 # keybinds
